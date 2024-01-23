@@ -5,16 +5,39 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-  <div class="head">spyder's character roster</div>
-  <div class="outerwrapper">
-  <div class="filterbox">filters</div>
-  <div class="wrapper">
-    <div class="charblock">character</div>
-    <div class="charblock">character</div>
-    <div class="charblock">character</div>
-    <div class="charblock">character</div>
-    <div class="charblock">character</div>
+  <div class="spyder--header">spyder's character roster</div>
+  <div class="spyder--outer-wrapper">
+  <div class="spyder--filter-box">
+    <input type="text" id="myInput" onkeyup="searchNames()" placeholder="search...">
+    <div id="myBtnContainer">
+      <h2>gender</h2>
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('male')">Male</button>
+      <button class="btn" onclick="filterSelection('female')">Female</button>
+      <button class="btn" onclick="filterSelection('nb')">Nonbinary</button>  
+      <h2>mortality</h2>
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('mortal')">Mortal</button>
+      <button class="btn" onclick="filterSelection('immortal')">Immortal</button>
+    </div>
+  </div>
+  <div id="spyder--wrapper">
+    <ul id="myUL">
+      <div class="filterDiv male immortal"><li><a href="#">name here</a>
+        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
+      </li></div>
+      <div class="filterDiv male immortal"><li><a href="#">name here</a>
+        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
+      </li></div>
+      <div class="filterDiv male immortal"><li><a href="#">name here</a>
+        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
+      </li></div>
+      <div class="filterDiv male immortal"><li><a href="#">name here</a>
+        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
+      </li></div>
+    </ul>
   </div>
   </div>
+  <script src="functions.js"></script>
 </body>
 </html>
