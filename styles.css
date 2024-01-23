@@ -1,10 +1,10 @@
 body {
-  background: #000;
+  background: #ededed;
 }
 
-wrapper {
+.wrapper {
   width:95%;
-  border:1px solid #fff;
+  border:1px solid #000;
   display:block;
   margin:auto;
 }
