@@ -8,3 +8,16 @@ body {
   display:block;
   margin:auto;
 }
+
+.head {
+  width:95%;
+  padding:20px;
+  font-size:40px;
+  background:#000;
+  color:#fff;
+  text-align:center;
+}
+
+.charblock {
+  width:200px;
+}
