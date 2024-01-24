@@ -36,20 +36,21 @@ body {
 }
 
 .spyder--outer-wrapper {
-  display:inline-block;
+  display:inline-flex;
 }
 
 .spyder--filter-box {
   width:150px;
   height:100vh;
   background: var(--grey-medium);
-  float:left;
+  display:inline-block;
   margin-right:10px;
   padding:10px;
 }
 
 #spyder--wrapper {
-  width:1320px;
+  width:100%;
+  display:block;
   height:100vh;
   margin-top:10px;
   overflow:auto;
