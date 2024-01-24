@@ -9,34 +9,48 @@
   <div class="spyder--outer-wrapper">
   <div class="spyder--filter-box">
     <input type="text" id="myInput" onkeyup="searchNames()" placeholder="search...">
-    <div id="myBtnContainer">
-      <h2>gender</h2>
-      <button class="btn active" onclick="filterSelection('all')">All</button>
-      <button class="btn" onclick="filterSelection('male')">Male</button>
-      <button class="btn" onclick="filterSelection('female')">Female</button>
-      <button class="btn" onclick="filterSelection('nb')">Nonbinary</button>  
-      <h2>mortality</h2>
-      <button class="btn active" onclick="filterSelection('all')">All</button>
-      <button class="btn" onclick="filterSelection('mortal')">Mortal</button>
-      <button class="btn" onclick="filterSelection('immortal')">Immortal</button>
+    <div class="filters">
+
+      <div class="ui-group">
+        <h3>Gender</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="gender">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".male">male</button>
+          <button class="button" data-filter=".female">female</button>
+          <button class="button" data-filter=".nb">nonbinary</button>
+        </div>
+      </div>
+    
+      <div class="ui-group">
+        <h3>Size</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="size">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".mortal">mortal</button>
+          <button class="button" data-filter=".immortal">immortal</button>
+          <button class="button" data-filter=".big">big</button>
+          <button class="button" data-filter=".tall">tall</button>
+        </div>
+      </div>
+    
+      <div class="ui-group">
+        <h3>Shape</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="shape">
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".round">round</button>
+          <button class="button" data-filter=".square">square</button>
+        </div>
+      </div>
+    
     </div>
+
   </div>
-  <div id="spyder--wrapper">
-    <ul id="myUL">
-      <div class="filterDiv male immortal"><li><a href="#">name here</a>
-        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
-      </li></div>
-      <div class="filterDiv male immortal"><li><a href="#">name here</a>
-        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
-      </li></div>
-      <div class="filterDiv male immortal"><li><a href="#">name here</a>
-        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
-      </li></div>
-      <div class="filterDiv male immortal"><li><a href="#">name here</a>
-        <img src="https://files.jcink.net/uploads2/godlybehaviour/GB24/stats_image.jpg">
-      </li></div>
-    </ul>
-  </div>
+  <div id="spyder--wrapper"><div class="grid">
+
+      <div class="charbox male immortal">text</div>
+      <div class="charbox male mortal">test</div>
+      <div class="charbox female immortal">tesssst</div>
+
+  </div></div>
   </div>
   <script src="functions.js"></script>
 </body>
