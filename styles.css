@@ -24,7 +24,7 @@ body {
 
 .spyder--header {
   width:100%;
-  font-size:40px;
+  font-size:50px;
   background: rgb(132, 181, 175);
   color:#fff;
   text-align:center;
@@ -32,7 +32,9 @@ body {
   padding-bottom:5px;
   font-family: 'Montserrat', sans-serif;
   text-transform:uppercase;
-  letter-spacing:-1px;
+  border-top-right-radius:25px;
+  border-top-left-radius:25px;
+  letter-spacing:4px;
 }
 
 .spyder--outer-wrapper {
@@ -45,7 +47,7 @@ body {
   background: var(--grey-medium);
   display:inline-block;
   margin-right:10px;
-  padding:10px;
+  padding:15px;
 }
 
 #spyder--wrapper {
@@ -67,10 +69,12 @@ body {
 }
 
 h2 {
-  color: var(--grey-dark);
-  text-align:center;
+  color: var(--grey-mdark);
+  text-align:left;
   margin-top:5px;
   font-size:20px;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom:1px dotted var(--grey-medium);
 }
 
 /* FILTER STYLES */
@@ -88,7 +92,11 @@ input {
   text-transform:uppercase;
   font-family: 'Montserrat', sans-serif;
   font-size:13px;
-  color:#eee;
+  color:var(--white);
+  text-align:center;
+  font-weight:bold;
+  padding-bottom:3px;
+  border-bottom:1px dotted var(--white);
 }
 
 li {
@@ -98,29 +106,57 @@ li {
 
 label {
   display:inline-flex;
-  color:#eee;
-  text-transform:lowercase;
-  letter-spacing:2px;
-  font-size:12px;
+  color:var(--white);
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:11px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .charbox {
-  width:200px;
-  height:300px;
-  border:1px solid #000;
+  width:375px;
+  height:200px;
+  border:1px solid var(--grey-mlight);
   padding:10px;
   margin:10px;
   display:inline-block;
+  background: var(--offwhite);
 }
 
 .charbox img {
-  max-width:200px;
+  height:145px;
   float:left;
+  width:90px;
+  padding:5px;
+  border:1px solid var(--grey-mlight);
+  object-fit:cover;
+  margin-right:10px;
+}
+
+.charbox li {
+  list-style-type:none;
+  text-align:left;
+  color:var(--grey-dark);
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.charbox li b {
+  text-transform:uppercase;
+  letter-spacing:0px;
 }
 
 .charbox a {
   color:#595959;
   text-transform:uppercase;
   margin:5px;
+}
+
+.chardesc {
+  margin-top:6px;
+  color:var(--grey-dark);
+  font-family: 'Open Sans', sans-serif;
+  font-size:13px;
+  letter-spacing:0px;
 }
